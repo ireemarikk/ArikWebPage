@@ -26,7 +26,6 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     NavbarComponent,
     FooterComponent
-
   ],
   imports: [
     BrowserModule,
@@ -39,8 +38,8 @@ import { FooterComponent } from './components/footer/footer.component';
     RouterModule.forRoot([], {scrollPositionRestoration: 'enabled'})
   ],
   providers: [
-    provideClientHydration(),
-    provideAnimationsAsync(),
+    // provideClientHydration(),
+    // provideAnimationsAsync(),
   ],
   bootstrap: [AppComponent]
 })
