@@ -13,11 +13,11 @@ export class HomeComponent implements AfterViewInit {
   constructor() {}
 
   initScrollTrigger() {
-    gsap.to('.menu, .nav-list, .bottom', {
+    gsap.to('.bottom', {
       opacity: 0,
       duration: 0.5,
       scrollTrigger: {
-        trigger: 'section.home',
+        trigger: '',
         scrub: true,
         start: '60% 60%',
         end: '70% 30%',
@@ -28,7 +28,7 @@ export class HomeComponent implements AfterViewInit {
       opacity: 0,
       duration: 0.5,
       scrollTrigger: {
-        trigger: 'section.two',
+        trigger: '',
         scrub: true,
         start: '70% 60%',
         end: '85% 30%',

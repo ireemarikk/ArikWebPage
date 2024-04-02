@@ -1,6 +1,7 @@
 
   .home {
     z-index: -1;
+    /* display: grid; */
     grid-template-rows: 130px 1fr 250px;
   }
   .home .top {

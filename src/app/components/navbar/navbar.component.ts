@@ -13,34 +13,14 @@ export class NavbarComponent implements AfterViewInit {
   constructor() {}
 
   initScrollTrigger() {
-    gsap.to('.menu, .nav-list, .bottom', {
+    gsap.to('.nav-list, .bottom', {
       opacity: 0,
       duration: 0.5,
       scrollTrigger: {
-        trigger: 'section.home',
+        trigger: '.home',
         scrub: true,
         start: '60% 60%',
         end: '70% 30%',
-      },
-    });
-
-    gsap.to('.heading-main', {
-      opacity: 0,
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: 'section.two',
-        scrub: true,
-        start: '70% 60%',
-        end: '85% 30%',
-      },
-    });
-
-    gsap.to('figure.preview', {
-      scrollTrigger: {
-        toggleClass: 'active',
-        trigger: 'figure.preview',
-        start: '50% 80%',
-        end: '85% 20%',
       },
     });
   }
