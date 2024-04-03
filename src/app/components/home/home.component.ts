@@ -1,5 +1,4 @@
 import { AfterViewInit, Component } from '@angular/core';
-
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -11,6 +10,21 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class HomeComponent implements AfterViewInit {
   constructor() {}
+  
+  datas = [
+    {
+      name: "Manolya Evleri",
+      imageUrl: "assets/images/1.jpg"
+    },
+    {
+      name: "Arık Siteleri",
+      imageUrl: "assets/images/2.jpg"
+    },
+    {
+      name: "Florya Residence",
+      imageUrl: "assets/images/3.jpg"
+    }
+  ]
 
   initScrollTrigger() {
     gsap.to('.bottom', {

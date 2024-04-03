@@ -16,6 +16,8 @@ import { ProjectComponent } from './components/project/project.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MatToolbarModule, 
     MatButtonModule, 
     MatIconModule,
+    MatCardModule,
+    FormsModule,
     RouterModule.forRoot([], {scrollPositionRestoration: 'enabled'})
   ],
   providers: [

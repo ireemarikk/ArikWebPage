@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, Input } from '@angular/core';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class NavbarComponent implements AfterViewInit {
   constructor() {}
+
 
   initScrollTrigger() {
     gsap.to('.nav-list, .bottom', {
@@ -28,4 +29,5 @@ export class NavbarComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.initScrollTrigger();
   }
+  
 }

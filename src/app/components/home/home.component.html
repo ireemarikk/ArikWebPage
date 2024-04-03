@@ -3,31 +3,27 @@
     <h1 class="heading-main">Arıkca İnşaat</h1>
     <img src="/assets/images/foto1.png" alt="">
   </div>
-  <div class="bottom">
-    <div class="bottom-left">Porro facere possimus inventore illo.</div>
-    <div class="bottom-right">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quidem
-      architecto ipsam numquam.
-    </div>
-  </div>
+
     <div class="content">
+      <h1>AKTİF PROJELERİMİZ</h1>
       <section class="scroll-content one">
-        <div class="center-img" id="hakkımızda">
-          <figure class="img">
-            <img
-              src="/assets/images/photo-1610123172705-a57f116cd4d9.jpeg"
-              alt=""
-            />
-          </figure>
-          <div class="img-text">
-            <div class="bold">sit amet consectetur adipisicing</div>
-            <div class="normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
+
+       <div class="card">
+    
+        <mat-card class="example-card" *ngFor="let data of datas">
+          
+          <img class=" card__img card__img--hover" mat-card-image src="{{data.imageUrl}}">
+          <div class="card__img--hover">
           </div>
-        </div>
+          <div class="card__info">
+            <h3 class="card__title">{{data.name}}</h3>
+          </div>
+
+        </mat-card>
+       </div>
       </section>
-      <section class="scroll-content two">
+
+      <!-- <section class="scroll-content two">
         <div class="center-img">
           <figure class="img preview">
             <img
@@ -42,8 +38,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="scroll-content three">
+      </section> -->
+      <!-- <section class="scroll-content three">
         <h1 class="heading-intro">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
           recusandae qui. Iste, deleniti.
@@ -80,7 +76,7 @@
             <div class="block-1">Lorem ipsum dolor sit amet consectetur.</div>
           </div>
         </div>
-      </section>
+      </section> -->
     </div>
   </div>
   
